@@ -10,9 +10,12 @@ namespace namespacemain
         static void Main(string[] args)
         {
             Display dObject = new Display();
+
            var result= dObject.DisplayMethod();
-            int num = Int32.Parse(result);
-            Console.Write("something");
+
+          Console.WriteLine(result);
+
+         
         }
     }
 }

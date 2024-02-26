@@ -22,6 +22,7 @@ namespace day_1_enum
 
             // Accessing enum values
             DayOfWeek today = DayOfWeek.Wednesday;
+            
 
            
 

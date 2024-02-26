@@ -7,17 +7,17 @@ namespace day_1_conversion
         static void Main(string[] args)
         {
 
-            //// Implicit casting from int to double
-            //int intValue = 42;
-            //double doubleValue = intValue; // The compiler automatically converts int to double
+            // Implicit casting from int to double
+            int intValue = 42;
+            double doubleValue = intValue; // The compiler automatically converts int to double
 
             //// Implicit casting from char to int
-            //char charValue = 'A';
-            //int intValue01 = charValue; // The ASCII value of 'A' is 65, which is implicitly converted to int
+            char charValue = 'A';
+            int intValue01 = charValue; // The ASCII value of 'A' is 65, which is implicitly converted to int
 
-            //// Explicit casting from double to int
-            //double doubleValue02 = 3.14;
-            //int intValue02 = (int)doubleValue; // The fractional part will be truncated, and intValue will be 3
+            // Explicit casting from double to int
+            double doubleValue02 = 3.14;
+            int intValue02 = (int)doubleValue; // The fractional part will be truncated, and intValue will be 3
 
             //// Explicit casting from int to byte
             //int intValue03 = 300;
@@ -28,6 +28,8 @@ namespace day_1_conversion
 
             char strValue = 'a';
             int intValue04 = Convert.ToInt32(strValue);
+            
+           
             Console.WriteLine(intValue04);
 
 
@@ -36,9 +38,9 @@ namespace day_1_conversion
             //string strValue01 = Convert.ToString(intValue);
 
 
-            //// Parse
-            //string strValue02 = "42";
-            //int intValue06 = int.Parse(strValue);
+            // Parse
+            string strValue02 = "42";
+            int intValue06 = int.Parse(strValue02);
 
             #region method
             //// TryParse (safer method to handle conversion errors)
@@ -54,13 +56,17 @@ namespace day_1_conversion
 
             #endregion
 
-            //// Boxing
-            //int intValue_ = 42;
-            //object boxedValue = intValue; // Implicit boxing
+            // Boxing
+            int intValue_ = 42;
 
-            //// Unboxing
-            //object boxedValue_ = 42;
-            //int _intValue = (int)boxedValue; // Explicit unboxing
+            object boxedValue = intValue; 
+            
+            // Implicit boxing
+
+            // Unboxing
+            object boxedValue_ = 42;
+
+            int _intValue = (int)boxedValue; // Explicit unboxing
 
 
         }

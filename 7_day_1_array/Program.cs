@@ -8,13 +8,34 @@ public class Program {
         // One-Dimensional Array Example
         int[] oneDimensionalArray = { 1, 2, 3, 4, 5 };
 
-       
+        int[] oneDimensionalArray02 = new int[10];
+
+        Console.WriteLine("enter the value");
+
+        for (int i = 0; i < oneDimensionalArray02.Length; i++)
+        {
+            var userInput = Console.ReadLine(); 
+
+            int result = int.Parse(userInput);
+
+            oneDimensionalArray02[i] = result;
+        }
+
+        for (int i = 0; i < oneDimensionalArray02.Length; i++)
+        {
+            Console.Write("  "+oneDimensionalArray02[i]);  // 
+        }
+
+        
+
+
+
 
         // Accessing elements in the 1D array
-        Console.WriteLine("One Dimension");  // Output: 1
-        Console.WriteLine(oneDimensionalArray[0]);  // Output: 1
-        Console.WriteLine(oneDimensionalArray[3]);  // Output: 4
-        Console.WriteLine(oneDimensionalArray[4]);  // Output: 5
+        //Console.WriteLine("One Dimension");  // Output: 1
+        //Console.WriteLine(oneDimensionalArray[0]);  // Output: 1
+        //Console.WriteLine(oneDimensionalArray[3]);  // Output: 4
+        //Console.WriteLine(oneDimensionalArray[4]);  // Output: 5
 
 
         // Two-Dimensional Array Example
@@ -24,13 +45,26 @@ public class Program {
                                        { 7, 8, 9 }
                                      };
 
-        int[,] threedimarray = { };
+        int[,,] threedimarray = { };
 
         // Accessing elements in the 2D array
         Console.WriteLine("Two Dimension");
         Console.WriteLine(twoDimensionalArray[0, 0]);  // Output: 1
         Console.WriteLine(twoDimensionalArray[1, 2]);  // Output: 6
         Console.WriteLine(twoDimensionalArray[2, 1]);  // Output: 8
+
+        for (int i =0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                Console.WriteLine(twoDimensionalArray[i, j]);
+            
+}
+        }
+        //index out of bound example
+        //foreach (int i in twoDimensionalArray) {
+        //    foreach (int j in twoDimensionalArray) {
+        //        Console.WriteLine(twoDimensionalArray[i, j]);
+        //    }
+        //}
 
 
 

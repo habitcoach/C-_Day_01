@@ -8,7 +8,7 @@ namespace _namespaceRef
 
         internal string DisplayMethod(){
 
-            return "something";
+            return "string passed from the method";
 }
     }
 
